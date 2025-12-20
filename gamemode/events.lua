@@ -128,6 +128,7 @@ function GM:PropBreak(att, prop)
 	if !IsValid(iPlayer) then return end
 
 	iPlayer:AddDeaths(1)
+	hook.Run("MR_PlayerDeath", iPlayer)
 
 	local time = self.RESPAWN_TIME
 
