@@ -229,6 +229,8 @@ function HitCheckpoint(newCheck)
 
 		iPlayer.Checkpoint = newCheck
 		GAMEMODE:UpdatePositions()
+
+		hook.Run("MR_PassedCheckpoint", iPlayer, newCheck)
 	end
 
 	-- Lap!

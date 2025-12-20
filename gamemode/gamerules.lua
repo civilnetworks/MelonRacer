@@ -60,6 +60,8 @@ function GM:CheckRoundFinished(ply)
 	net.Start("MelonRacer_Winner")
 		net.WritePlayer(ply)
 	net.Broadcast()
+
+	hook.Run("MR_PlayerWin", ply)
 end
 
 function GM:ResetStats()

@@ -67,4 +67,6 @@ function meta:DoneLap()
 			net.WriteFloat(GAMEMODE.Stats.BestLap)
 		end
 	net.SendOmit(self)
+
+	hook.Run("MR_LapCompleted", self, self.LapTime, pb, sr)	
 end
