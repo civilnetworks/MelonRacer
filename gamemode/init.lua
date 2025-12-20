@@ -45,6 +45,7 @@ include("gamerules.lua")
 include("events.lua")
 include("duplicator.lua")
 include("sv_player_ext.lua")
+include("workshop.lua")
 
 util.AddNetworkString("MelonRacer_PlayerLap")
 util.AddNetworkString("MelonRacer_Lap")

@@ -14,6 +14,14 @@ CreateClientConVar("mr_godmode", "0")
 CreateClientConVar("mr_forwardspeed", "170")
 CreateClientConVar("mr_reversespeed", "170")
 
+function ScreenScale( width )
+	return width * ( ScrW() / 640.0 )
+end
+
+function ScreenScaleH( height )
+	return height * ( ScrH() / 480.0 )
+end
+
 local function CreateNameFont()
 	local scale = ntScale:GetFloat()
 
